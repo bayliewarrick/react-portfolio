@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Work = ({props, history}) => {
 console.log(history)

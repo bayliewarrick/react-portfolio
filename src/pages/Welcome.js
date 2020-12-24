@@ -2,8 +2,6 @@ import React from 'react';
 
 import headshot from '../assets/headshot.jpg'
 
-import Navbar from '../components/NavigationBar'
-
 const Welcome = ({props, history}) =>  {
 
     return(

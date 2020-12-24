@@ -6,13 +6,15 @@ import Work from '../pages/Work'
 
 import Navbar from './NavigationBar'
 
+import PageShell from '../pages/PageShell'
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar />
-        <Route path="/" exact component={Welcome}></Route>
-        <Route path="/work" exact component={Work}></Route>
+        <Route path="/" exact component={PageShell(Welcome)}></Route>
+        <Route path="/work" exact component={PageShell(Work)}></Route>
       </div>
     );
   }
