@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import Welcome from '../pages/Welcome'
 import Work from '../pages/Work'
+import Technologies from '../pages/Technologies'
 
 import Navbar from './NavigationBar'
 
@@ -15,6 +16,7 @@ class App extends Component {
         <Navbar />
         <Route path="/" exact component={PageShell(Welcome)}></Route>
         <Route path="/work" exact component={PageShell(Work)}></Route>
+        <Route path="/skills" exact component={PageShell(Technologies)}></Route>
       </div>
     );
   }

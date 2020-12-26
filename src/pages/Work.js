@@ -8,7 +8,6 @@ console.log(history)
         <p>Full Stack React &amp; Node.JS Developer</p>
         <p>Welcome to my site.</p>
         <div className="form">
-        <button onClick={() =>history.push('/')}>Go Home</button>
         </div>
       </div>
     )

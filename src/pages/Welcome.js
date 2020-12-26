@@ -2,6 +2,8 @@ import React from 'react';
 
 import headshot from '../assets/headshot.jpg'
 
+import { Button } from '@material-ui/core'
+
 const Welcome = ({props, history}) =>  {
 
     return(
@@ -10,8 +12,8 @@ const Welcome = ({props, history}) =>  {
         <img src={headshot} alt="headshot" />
         <p>Full Stack React &amp; Node.JS Developer</p>
         <p>Welcome to my site.</p>
-        <div className="form">
-        <button onClick={() => history.push('/work')} title="hello">Check out my work</button>
+        <div>
+        <Button fullWidth variant="contained" color="secondary" onClick={() => history.push('/work')}>Check out my work</Button>
         </div>
       </div>
     )

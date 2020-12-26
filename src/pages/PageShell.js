@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
+import { Button } from '@material-ui/core'
+
 const PageShell = Page => {
   return props =>
     <div className="page">
@@ -12,7 +15,10 @@ const PageShell = Page => {
         transitionName={'SlideIn'}
       >
         <Page {...props} />
-      </ReactCSSTransitionGroup>
+        <div id="buttons">
+        {props.location.pathname !== '/' ? <Button fullWidth href="/" variant="outlined" color="secondary">Go Home</Button> : null }
+        </div>
+        </ReactCSSTransitionGroup>
     </div>;
 };
 export default PageShell;
